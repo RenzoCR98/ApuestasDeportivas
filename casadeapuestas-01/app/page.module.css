@@ -1,0 +1,76 @@
+.bannerContainer {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+.bannerImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+  
+.content {
+    padding: 20px;
+}
+
+.sportsContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .sportBox {
+    flex: 1;
+    width: calc(33.33% - 20px); /* Espacio igual entre los 3 cuadros */
+    padding: 20px;
+    border: 1px solid #4682b4; /* Borde delgado color azul metálico */
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f0f8ff; /* Color de fondo */
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+
+  .title {
+    font-size: 2rem; /* Tamaño de fuente más grande */
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .sportBox:hover {
+    background-color: #e0f7fa; /* Cambio de fondo al pasar el cursor */
+    border-color: #4682b4; /* Cambio de color del borde */
+  }
+
+  .sportBox {
+    flex: 1;
+    width: calc(25% - 20px); /* Espacio igual entre los 4 cuadros */
+    padding: 20px;
+    border: 1px solid #4682b4; /* Borde delgado color azul metálico */
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f0f8ff; /* Color de fondo */
+    cursor: pointer; /* Cambia el cursor a pointer */
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .sportBox:nth-child(1)::before {
+    background-image: url('/images/futbol.png');
+  }
+  
+  .sportBox:nth-child(2)::before {
+    background-image: url('/images/voleyball.png');
+  }
+  
+  .sportBox:nth-child(3)::before {
+    background-image: url('/images/tenis.png');
+  }
+  
+  .sportBox:nth-child(4)::before {
+    background-image: url('/images/baloncesto.png');
+  }
